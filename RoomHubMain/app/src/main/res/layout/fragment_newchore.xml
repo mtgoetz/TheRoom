@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/newchore_container"
+    android:background="@color/colorBackground"
+    android:focusable="true" >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465"
+        android:background="@drawable/popup_borders"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/chore_popup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Add a new chore:"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" />
+
+        <EditText
+            android:id="@+id/chore_row_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chore"
+            app:layout_constraintTop_toBottomOf="@id/chore_popup_title" />
+
+        <Button
+            android:id="@+id/chore_send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:text="ADD"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/chore_row_text"
+            tools:layout_editor_absoluteX="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/chore_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:text="CANCEL"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+            android:visibility="visible"
+            app:layout_constraintLeft_toRightOf="@+id/chore_send_button"
+            app:layout_constraintTop_toBottomOf="@+id/chore_row_text" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="60dp"
+    android:layout_gravity="center"
+    android:id="@+id/manage_root" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/manage_name"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/manage_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            />
+
+        <EditText
+            android:id="@+id/manage_name_edittext"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manage_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/manage_name"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/manage_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/manage_address_edittext"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send an invitation by text:     "
+        android:layout_centerHorizontal="true"
+        android:id="@+id/invite_title"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/manage_address"
+        android:layout_marginBottom="4dp"/>
+    <LinearLayout
+        android:id="@+id/manage_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/invite_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        >
+
+        <EditText
+            android:id="@+id/manage_invite_edittext"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup_borders"
+            android:inputType="phone"
+            android:padding="1dp"
+            android:hint="phone number"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/manage_invite_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_invite"
+        android:text="Send Invitation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manage_leavegroup_button"
+        android:text="Leave Group"
+        android:layout_below="@id/manage_invite_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/manage_leavegroup_button"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/manage_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Save"/>
+
+        <Button
+            android:id="@+id/manage_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_margin="6dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

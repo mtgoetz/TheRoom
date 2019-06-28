@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "18849490442",
+    "firebase_url": "https://roomhub-cs1635.firebaseio.com",
+    "project_id": "roomhub-cs1635",
+    "storage_bucket": "roomhub-cs1635.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18849490442:android:349d6b1f94a67ba3",
+        "android_client_info": {
+          "package_name": "edu.pitt.cs.cs1635.group4.roomhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18849490442-5mu5o7fv2rlsbki5o95n13b7t3ukkgvu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.pitt.cs.cs1635.group4.roomhub",
+            "certificate_hash": "22b5b9bfb73f899606343a70b2d5b87901c9610b"
+          }
+        },
+        {
+          "client_id": "18849490442-58qr7e060vmbv9u30bajpoaooq8i7l6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmCAc9JrFbOVE2cMgUbLzqqY9vYj-jD20"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18849490442-58qr7e060vmbv9u30bajpoaooq8i7l6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

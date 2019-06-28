@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/newalert_container"
+    android:background="@color/colorBackground"
+    android:focusable="true" >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/popup_borders"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/alert_popup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Post an alert to roomates:"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/alert_row_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/alert_popup_title" />
+
+    <Button
+        android:id="@+id/alert_send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="SEND"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/alert_row_text" />
+
+    <Button
+        android:id="@+id/alert_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="CANCEL"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/alert_send_button"
+        app:layout_constraintTop_toBottomOf="@+id/alert_row_text" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

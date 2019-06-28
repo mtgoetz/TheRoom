@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/starter_root"
+    android:gravity="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starter_newgroup_button"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/starter_invite_text"
+        android:text="Create new group"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starter_invite_text"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Join a group from an invite code:"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starter_code_edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/starter_invite_text"
+        android:hint="invite code               "/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starter_join_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/starter_code_edittext"
+        android:text="Join"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/starter_about_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="About"/>
+    </RelativeLayout>
+
+</RelativeLayout>

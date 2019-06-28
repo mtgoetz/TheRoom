@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/settings_root"
+    >
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/settings_top"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/settings_manageGroups_button"
+            android:layout_margin="8dp"
+            android:id="@+id/settings_prof_button"
+            android:text="PROFILE"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/settings_manageGroups_button"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:text="Manage Group"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:id="@+id/settings_topll">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/settings_text_notif"
+                android:text="Notifications"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settings_notif_checkbox"
+                android:layout_toRightOf="@id/settings_text_notif"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/settings_logout_button"
+            android:text="LOGOUT"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/settings_topll"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorWhite"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
